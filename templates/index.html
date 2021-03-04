@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+    <meta property='og:url' content='URLが入る'>
+    <meta property='og:description' content='Webデザイナー TARO YAMADAのポートフォリオサイトです！'>
+    <meta property="og:image" content="img/ogp.png">
+    <meta name="description" content="Webデザイナー TARO YAMADAのポートフォリオサイトです！" />
+    <title>Ryuku Higa's portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link href="{% static 'css/reset.css'" media="all" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/photoswipe/photoswipe.css' %}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/photoswipe/default-skin/default-skin.css' %}" media="all" rel="stylesheet"
+        type="text/css" />
+    <link href="{% static 'css/style.css' %}" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+    <link rel=”canonical” href=”URLが入る” />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- .gnav -->
+        <nav class="gnav" class="fixed">
+            <ul class="gnav-list">
+                <li class="gnav-item"><a class="gnav-link" href="#feature-section">MY SITE</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- /.gnav -->
+
+        <!-- .header -->
+        <header class="header">
+            <h1 class="logo">
+                <div class="logo-title">RYUUKU HIGA</div>
+                <div class="logo-subtitle">PORTFOLIO</div>
+            </h1>
+        </header>
+        <!-- /.header -->
+
+        <main class="content">
+
+            <!-- .works-section -->
+            <!-- .about-section -->
+            <section class="about-section section" id="about-section">
+                <div class="inner">
+                    <div class="section-heading">
+                        <h2 class="heading-primary">ABOUT</h2>
+                    </div>
+                    <div class="section-body about">
+                        <div class="about-item">
+                            <div class="about-image-wrapper">
+                                <img class="about-image lazyload fadein" src="{% static 'img/about/twitter_icon.jpg' %}"
+                                    alt="">
+                            </div>
+                            <div class="about-body">
+                                <p>
+                                    ポートフォリオをご覧いただき誠にありがとうございます。現在、独学でWebエンジニアを目指し日々勉強中の比嘉と申します。<br>
+                                    趣味は、プログラミングと、ストリートダンスをしており学生時代には、ダンスイベントを主催したり、ダンススクールでインストラクターをしたりしていました。<br>
+
+                                    今後は、誰かの’こーいうのあっらいいな。’を実現できるエンジニアとして働けるよう転職活動に力を入れていきます。
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.about-section -->
+
+
+            <!-- .skill-section -->
+            <section class="skill-section section" id="skill-section">
+                <div class="inner">
+                    <div class="section-heading">
+                        <h2 class="heading-primary">SKILL</h2>
+                    </div>
+                    <br><br>
+                    <div class="section-lead">
+                    </div>
+                    <div class="section-body skill">
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-image-wrapper">
+                                    <i class="fas fa-code fa-3x"></i>
+                                </div>
+                                <div class="skill-body">
+                                    <h3 class="skill-title">HTML5/CSS3</h3>
+                                    <div class="skill-rating rating">
+                                        <div class="rate rate3"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-image-wrapper">
+                                    <i class="fas fa-code fa-3x"></i>
+                                </div>
+                                <div class="skill-body">
+                                    <h3 class="skill-title">bootstrap</h3>
+                                    <div class="skill-rating rating">
+                                        <div class="rate rate3"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-image-wrapper">
+                                    <i class="fab fa-python fa-3x"></i>
+                                </div>
+                                <div class="skill-body">
+                                    <h3 class="skill-title">Python</h3>
+                                    <div class="skill-rating rating">
+                                        <div class="rate rate4"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-image-wrapper">
+                                    <i class="fab fa-java fa-3x"></i>
+                                </div>
+                                <div class="skill-body">
+                                    <h3 class="skill-title">JAVA</h3>
+                                    <div class="skill-rating rating">
+                                        <div class="rate rate2"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.skill-section -->
+
+            <!-- .feature-section -->
+            <section class="feature-section section" id="feature-section">
+                <div class="inner">
+                    <div class="section-heading">
+                        <h2 class="heading-primary">MY SITE</h2>
+                    </div>
+                    <br>
+                    <div class="section-body feature">
+                        <div class="feature-item">
+                            <div class="feature-image-wrapper">
+                                <a href="https://dlog02.herokuapp.com/" target="_blank" class="hover-action"><img
+                                        class="feature-image" src="{% static 'img/feature/dlog02.png' %}" alt=""></a>
+                            </div>
+                            <div class="feature-body">
+                                <p>
+                                    <span class="text-bold">サイト名：</span>Dlog<br><b>URL：</b><a
+                                        href="https://dlog02.herokuapp.com/"
+                                        target="_blank">https://dlog02.herokuapp.com/</a>
+                                </p>
+                                <hr>
+                                <b>使用言語：</b>HTML, CSS, Python<br><b>フレームワーク:</b>
+                                bootstrap, Django<br><b> サーバー:</b> Heroku, gunicorn<br><b>クラウド:</b> AWS(S3) <br>
+                                <hr>
+                                <p><b>開発した動機:</b> <br>
+                                    このサイトは、コロナの影響でダンスイベントが小規模化、オンライン化したことによって、情報が拡散されずイベントに人が集まらないという問題を解決できないかと思い制作しました。
+                                    このサイトには、誰でも、イベントの規模も場所も関係なく情報をアップロードすることが可能です。よって、個人や仲間内でのみ開催していた練習会や、ダンスバトルも情報として拡散することができる。
+                                </p>
+                                <p><b>この先追加したい機能: </b><br>
+                                    YouTubeAPIなどを用い動画を掲載できるようにして、イベントのダイジェスト映像などを関連付けてアップロードできるようにしたい。</p>
+                                    
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.feature-section -->
+
+
+
+
+
+            <!-- .contact-section -->
+            <section class="contact-section section" id="contact-section">
+                <div class="inner">
+                    <div class="section-heading">
+                        <h2 class="heading-primary">CONTACT</h2>
+                    </div>
+                    <div class="section-lead">
+                        <p>
+                            お問い合わせは、<br class="sp-only">メールでお願いいたします。
+                        </p>
+                    </div>
+                    <div class="section-body contact">
+
+                        <div class="contact-text">tiiyou105@gmail.com</div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.contact-section -->
+
+        </main>
+
+        <!-- .footer -->
+        <footer class="footer">
+            <div class="page-top" id="js-page-top">
+                トップへもどる
+            </div>
+            <div class="inner">
+                <div class="copyright">Copyright&copy;TARO YAMADA. All Rights Reserved.</div>
+            </div>
+        </footer>
+        <!-- /.footer -->
+
+    </div>
+
+    <!-- 下記はPhotoswipeプラグイン用 -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+       It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="{% static 'js/photoswipe/photoswipe.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/photoswipe/photoswipe-ui-default.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/photoswipe/photoswipe-setup.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/lazysizes/lazysizes.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
